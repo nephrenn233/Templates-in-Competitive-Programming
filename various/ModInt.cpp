@@ -24,7 +24,7 @@ public:
     }
     friend ModInt operator + (const ModInt &lhs, const ModInt &rhs) {
         ModInt res = lhs;
-        res -= rhs;
+        res += rhs;
         return res;
     }
     ModInt &operator -= (const ModInt &rhs) {
