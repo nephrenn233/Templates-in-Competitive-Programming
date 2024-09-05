@@ -9,7 +9,8 @@
 ### 数据结构 data structure
 
 树状数组，支持单点修改、前缀和查询、对于权值树状数组查询第 $k$ 小数（Fenwick Tree.cpp）
-并查集，支持查询集合、查询集合大小、合并
+
+并查集，支持查询集合、查询集合大小、合并（Disjoint Set Union.cpp）
 
 ### 杂项 various
 
