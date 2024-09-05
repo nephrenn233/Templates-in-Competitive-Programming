@@ -1,7 +1,8 @@
 class DSU {
 // 1-indexed
+private:
     std::vector<int> f, sz;
-
+public:
     DSU () {}
     DSU (int _n) {
         init(_n);
