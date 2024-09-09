@@ -2,16 +2,17 @@
 
 自用算法竞赛模板，来源于我自己和网络。
 
-## Done
+## 数据结构 data structure
 
-目前已经完成的模板
++ 树状数组（Fenwick Tree.cpp），支持单点修改、前缀和查询
++ 并查集（Disjoint Set Union.cpp），支持查询集合、查询集合大小、合并
 
-### 数据结构 data structure
+## 数学 math
 
-树状数组，支持单点修改、前缀和查询（Fenwick Tree.cpp）
++ 矩阵类（Matrix.cpp）
++ 高斯消元（Gaussian Elimination.cpp, with Matrix.cpp）
++ 组合数（Binom.cpp, with ModInt.cpp）
 
-并查集，支持查询集合、查询集合大小、合并（Disjoint Set Union.cpp）
+## 杂项 various
 
-### 杂项 various
-
-取模类（ModInt.cpp）
++ 取模类（ModInt.cpp）
