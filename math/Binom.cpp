@@ -1,6 +1,7 @@
 constexpr int N = 1e5;
 constexpr i64 P = 1e9 + 7;
-ModInt<P> fac[N + 10], ifac[N + 10];
+typedef ModInt<P> Z;
+Z fac[N + 10], ifac[N + 10];
 void init () {
     fac[0] = 1;
     for (int i = 1; i <= N; ++i) {
@@ -11,6 +12,6 @@ void init () {
         ifac[i] = ifac[i + 1] * Z(i + 1);
     }
 }
-ModInt<P> binom (int n, int m) {
+Z binom (int n, int m) {
     return fac[n] * ifac[m] * ifac[n - m];
 }

@@ -10,6 +10,7 @@
 ## 数学 math
 
 + 组合数 (Binom.cpp, with ModInt.cpp)
++ 卢卡斯定理 (Lucas.cpp, with Binom.cpp)
 
 ## 杂项 various
 
