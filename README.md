@@ -12,6 +12,9 @@
 + 组合数 (Binom.cpp, with ModInt.cpp)
 + 卢卡斯定理 (Lucas.cpp, with Binom.cpp)
 
+## 字符串 string
++ 前缀函数 (kmp.cpp)
+
 ## 杂项 various
 
 + 取模类 (ModInt.cpp)
