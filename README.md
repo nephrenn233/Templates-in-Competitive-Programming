@@ -1,6 +1,7 @@
 # Templates-in-Competitive-Programming
 
 自用算法竞赛模板，来源于我自己和网络。
+附有 LaTex 生成的 pdf 版本。
 
 ## 数据结构 data structure
 
