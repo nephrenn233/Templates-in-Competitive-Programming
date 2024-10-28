@@ -6,6 +6,7 @@
 
 + 树状数组 (Fenwick Tree.cpp)，支持单点修改、前缀和查询
 + 并查集 (Disjoint Set Union.cpp)，支持查询集合、查询集合大小、合并
++ FHQ Treap (FHQ Treap.cpp)，支持插入、删除、按值查询排名、按排名查询值、查询前驱后继
 
 ## 数学 math
 
@@ -13,7 +14,7 @@
 + 卢卡斯定理 (Lucas.cpp, with Binom.cpp)
 
 ## 字符串 string
-+ 前缀函数 (kmp.cpp)
++ 前缀函数 (KMP.cpp)
 
 ## 杂项 various
 
