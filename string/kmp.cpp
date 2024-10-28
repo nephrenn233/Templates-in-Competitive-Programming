@@ -1,5 +1,6 @@
 // string: 0-indexed
 // f: 1-indexed
+
 std::vector<int> kmp(std::string s) {
     int n = s.size();
     std::vector<int> f(n + 1);
