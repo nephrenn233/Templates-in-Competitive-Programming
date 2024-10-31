@@ -19,6 +19,7 @@
 
 ## 字符串 string
 + 前缀函数 (KMP.cpp)
++ Manacher 算法 (Manacher.cpp)
 
 ## 杂项 various
 
