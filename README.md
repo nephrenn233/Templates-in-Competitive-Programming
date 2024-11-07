@@ -16,11 +16,17 @@
 + 卢卡斯定理 (Lucas.cpp, with Binom.cpp)
 + 线性筛素数 (Prime Sieve.cpp)
 + 线性求逆元 (1-n Inverse.cpp)
++ 线性基 (Basis.cpp)
++ 高斯消元 (Gaussian Elimination.cpp)
 
 ## 字符串 string
+
 + 前缀函数 (KMP.cpp)
 + Manacher 算法 (Manacher.cpp)
++ Trie (Trie.cpp)
 
 ## 杂项 various
 
 + 取模类 (ModInt.cpp)
++ 大整数类 (BigInt.cpp)
++ 对拍 (duipai.cpp)
