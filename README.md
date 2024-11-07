@@ -18,12 +18,15 @@
 + 线性求逆元 (1-n Inverse.cpp)
 + 线性基 (Basis.cpp)
 + 高斯消元 (Gaussian Elimination.cpp)
++ 扩展欧几里得算法 (Exgcd.cpp)
++ 平面计算几何 (Computational Geometry.cpp)
 
 ## 字符串 string
 
 + 前缀函数 (KMP.cpp)
 + Manacher 算法 (Manacher.cpp)
 + Trie (Trie.cpp)
++ 字符串哈希 (String Hash.cpp)
 
 ## 杂项 various
 
