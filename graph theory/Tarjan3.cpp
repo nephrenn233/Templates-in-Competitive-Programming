@@ -1,31 +1,34 @@
-int dfn[MAXN], low[MAXN], tt = 0;
+int dfn[MAXN], low[MAXN], idx = 0;
 stack<int> st;
-map<PII, bool> vis;
-
 vector<vector<int>> ans;
 
-void tarjan(int u, int f) {
-    dfn[u] = low[u] = ++tt;
+void tarjan(int u, bool is_root) {
+    dfn[u] = low[u] = ++idx;
     st.push(u);
-    for(auto [v, id] : g1[u]) {
-        if(id == (f ^ 1)) continue;
+    if(is_root && g[u].size() == 0) {
+        vector<int> res;
+        res.push_back(u);
+        ans.push_back(res);
+        return;
+    }
+    for(auto v : g[u]) {
         if(!dfn[v]) {
-            tarjan(v, id);
+            tarjan(v, 0);
             low[u] = min(low[u], low[v]);
+            if(low[v] >= dfn[u]) {
+                vector<int> res;
+                int w;
+                do {
+                    w = st.top();
+                    st.pop();
+                    res.push_back(w);
+                }while(w != v);
+                res.push_back(u);
+                ans.push_back(res);
+            }
         } else {
             low[u] = min(low[u], dfn[v]);
         }
-    }
-
-    if(dfn[u] == low[u]) {
-        vector<int> res;
-        res.push_back(u);
-        while(st.size() && st.top() != u) {
-            res.push_back(st.top());
-            st.pop();
-        }
-        st.pop();
-        ans.push_back(res);
     }
 }
 
@@ -35,12 +38,12 @@ void solve () {
         int u, v;
         cin >> u >> v;
         if(u == v) continue;
-        g1[u].push_back({v, i << 1});
-        g1[v].push_back({u, i << 1 | 1});
+        g[u].push_back(v);
+        g[v].push_back(u);
     }
 
     for(int i = 1; i <= n; ++i) {
-        if(!dfn[i]) tarjan(i, 0);
+        if(!dfn[i]) tarjan(i, 1);
     }
 
     cout << ans.size() << "\n";

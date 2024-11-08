@@ -48,8 +48,9 @@
 + 树上差分 (Difference On Tree.cpp)
 + 连通性相关
     + 割点 (Tarjan1.cpp)
-    + 点双连通分量 (Tarjan2.cpp)
-    + 边双连通分量 (Tarjan3.cpp)
+    + 割边 (Tarjan2.cpp)
+    + 点双连通分量 (Tarjan3.cpp)
+    + 边双连通分量 (Tarjan4.cpp)
 
 ## 杂项 various
 
