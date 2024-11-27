@@ -1,4 +1,4 @@
-# Templates-in-Competitive-Programming
+# algorithm-template
 
 自用算法竞赛模板，来源于我自己和网络。
 
