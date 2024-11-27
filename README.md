@@ -4,7 +4,7 @@
 
 由于代码时间跨度较大，来源较多，代码风格存在差异。
 
-附有 LaTex 生成的 pdf 版本，使用 [ply-template](https://github.com/palayutm/ply-template) 模板生成。
+附有 LaTeX 生成的 pdf 版本，使用 [ply-template](https://github.com/palayutm/ply-template) 模板生成。
 
 ## 数据结构 data structure
 
