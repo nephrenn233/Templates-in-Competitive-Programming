@@ -1,6 +1,6 @@
 # algorithm-template
 
-自用算法竞赛模板，来源于我自己和网络。
+自用算法竞赛模板，来源于到处抄。
 
 由于代码时间跨度较大，来源较多，代码风格存在差异。
 
@@ -18,6 +18,8 @@
     + 静态区间第 k 小 (persistent-segment-tree.cpp)
     + 静态区间颜色数 (static-interval-color.cpp)
     + 静态区间 mex (static-interval-mex.cpp)
++ 莫队
+    + 普通莫队 (mo.cpp)
 
 ## 数学 math
 
@@ -28,7 +30,7 @@
 + 线性基 (basis.cpp)
 + 高斯消元 (gaussian-elimination.cpp)
 + 扩展欧几里得算法 (exgcd.cpp)
-+ 平面计算几何 (computational-geometry.cpp)
++ 平面计算几何 (computational-geometry.cpp) **待完善**
 
 ## 字符串 string
 
