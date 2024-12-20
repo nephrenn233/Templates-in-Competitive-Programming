@@ -20,28 +20,28 @@ struct Mo {
                 }
                 return ri < rj;
             });
-        int l = 0, r = -1;
+        int l = 0, r = 0;
         for (auto i : order) {
             auto [li, ri] = lr[i];
             while (l > li) add_left(--l);
-            while (r < ri) add_right(++r);
+            while (r < ri) add_right(r++);
             while (l < li) remove_left(l++);
-            while (r > ri) remove_right(r--);
+            while (r > ri) remove_right(--r);
             out(i);
         }
     }
 };
 
-int rL = 0, rR = -1;
+int rL = 0, rR = 0;
 auto add_left = [&](int i) -> void {
     --rL;
     assert(i == rL);
     // operation
 };
 auto add_right = [&](int i) -> void {
-    ++rR;
     assert(i == rR);
     // operation
+    ++rR;
 };
 auto remove_left = [&](int i) -> void {
     assert(i == rL);
@@ -49,9 +49,9 @@ auto remove_left = [&](int i) -> void {
     ++rL;
 };
 auto remove_right = [&](int i) -> void {
+    --rR;
     assert(i == rR);
     // operation
-    --rR;
 };
 auto out = [&](int qi) -> void {
     // get answer
